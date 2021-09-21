@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/gh/housseynCheriet/SelectJs/selectjs.1.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
   </head>
-  <!--<script src="./src/select_2.js"></script>-->
+  <!--<script src="./select_1.js"></script>-->
   <script>var ml = { timelines: {}};</script>
   <style>
   body {
@@ -685,7 +685,7 @@ var obj=[],arr=[
 var n2=2000;
 select(".ml34 .letter").forEach(function(e,i) {
   var z=0;
-  for (let ii = 0; ii <4&&z<4; ii++) {
+  for (var ii = 0; ii <4&&z<4; ii++) {
     
   
   obj.push({typeAnimation:"expooutin",
@@ -793,7 +793,7 @@ var posi44=[[-234+269,-26+269],[-58+269,-200+269],[-173+269,-90+269],[-118+269,-
 var posit=[[172,72],[-140,-60],[135,-60],[-16,72],[-42,72],[-50,-60],[62,-60],[-106,72]];
 var posiY=[0,72,-60,-60,72,72,-60,-60,72];
 var sDelay2=70000;
-for (let i = 0; i <9; i++) { 
+for (var i = 0; i <9; i++) { 
   //if(i!=8)
   obj2.push({typeAnimation:"backinout",
 property:[{transform:[property[i%2]]}],
@@ -1057,13 +1057,13 @@ duration:1000}:false
  if(i!=8)
  {animate(elem[arrElem[i]],copy(obj2[i]),copy(obj3[i]),copy(obj4[i]),copy(obj5[i]))();
   }
-    animate(select(".ml72 .let",1),copy(obj2[i]),copy(obj22[i]),copy(obj44[i]),copy(obj41[i]),
-   select(".ml72 .let",0),copy(obj3[i]),copy(obj33[i]),copy(obj55[i]),copy(obj51[i]))();
+    animate(select(".ml72 .let",1),obj2[i],obj22[i],obj44[i],obj41[i],
+   select(".ml72 .let",0),obj3[i],obj33[i],obj55[i],obj51[i])();
 
-animate(select(".ml72 .let",1),copy(obj6[i]),copy(obj61[i]),copy(obj61[i+1]),copy(obj611[i]),copy(obj611[i+1]))();
-animate(elem[arrElem2[i]],copy(obj611[i]),copy(obj6111[i]),copy(obj711[i]),copy(obj7111[i]),
-  elem[arrElem2[i+1]],copy(obj611[i+1]),copy(obj6111[i+1]),copy(obj711[i+1]),copy(obj7111[i+1]))();
-animate(select(".ml72 .let",0),copy(obj7[i]),copy(obj71[i]),copy(obj71[i+1]),copy(obj711[i]),copy(obj711[i+1]))();
+animate(select(".ml72 .let",1),obj6[i],obj61[i],obj61[i+1],obj611[i],obj611[i+1])();
+animate(elem[arrElem2[i]],obj611[i],obj6111[i],obj711[i],obj7111[i],
+  elem[arrElem2[i+1]],obj611[i+1],obj6111[i+1],obj711[i+1],obj7111[i+1])();
+animate(select(".ml72 .let",0),obj7[i],obj71[i],obj71[i+1],obj711[i],obj711[i+1])();
 
 //animate(select(".ml72 .let",0),obj7[i])();
 }
@@ -1297,7 +1297,7 @@ objHeartInstaCall.callback=cB("bottom left",0)
 objHeartFaceCall.callback=cB2(58,1);
 objHeartYoutCall.callback=cB2(40,2);
 
-for (let i = 0,z=0; i <4; i++) {
+for (var i = 0,z=0; i <4; i++) {
   
   /*  objBckColor.push(
     {typeAnimation:"expoout",
